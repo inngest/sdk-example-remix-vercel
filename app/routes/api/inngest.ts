@@ -1,6 +1,6 @@
 import { serve } from "inngest/remix";
-import fns from "~/inngest";
+import { inngest, functions } from "~/inngest";
 
-const handler = serve("My Remix App", fns);
+const handler = serve(inngest, fns);
 
 export { handler as loader, handler as action };
